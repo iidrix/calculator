@@ -9,8 +9,6 @@ let a = '';
 let operator;
 let b = '';
 let result;
-let lastActiveOperation;
-
 
 // Handling changes on display
 
@@ -19,23 +17,18 @@ let observer = new MutationObserver(() => {
 });
 observer.observe(display, {childList: true});
 
-
 // Main operation
 
 function operate(operator, a, b) {
 
     if (operator === 'add') {
         result = add(a, b);
-        // return result;
     } else if (operator === 'subtract') {
         result = subtract(a, b);
-        // return result;
     } else if (operator === 'multiply') {
         result = multiply(a, b);
-        // return result;
     } else if (operator === 'divide') {
         result = divide(a, b);
-        //return result;
     }
 
 }
