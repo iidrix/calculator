@@ -10,8 +10,9 @@ body {
 }
 
 #container {
-    width: 60vw;
+    width: 80vw;
     height: 100vh;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,4 +58,8 @@ button {
     background-color: #5e5e5e;
     color: #fff;
     font-size: 18px;
+}
+
+button.operation {
+    background-color: #858585;
 }
